@@ -60,3 +60,9 @@ const paymentSchema = new mongoose.Schema({
 });
 paymentSchema.plugin(require('mongoose-autopopulate'));
 module.exports = mongoose.model('Payment', paymentSchema);
+currency: {
+  type: String,
+  enum: Object.keys(SUPPORTED_CURRENCIES),
+  default: DEFAULT_CURRENCY,
+  required: true
+}
