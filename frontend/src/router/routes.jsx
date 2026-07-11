@@ -55,10 +55,7 @@ let routes = {
       path: '/customer',
       element: <Customer />,
     },
-    {
-      path: '/people',
-      element: <People />,
-    },
+
     {
       path: '/invoice/create',
       element: <InvoiceCreate />,
