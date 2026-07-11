@@ -139,3 +139,9 @@ const quoteSchema = new mongoose.Schema({
 
 quoteSchema.plugin(require('mongoose-autopopulate'));
 module.exports = mongoose.model('Quote', quoteSchema);
+currency: {
+  type: String,
+  enum: Object.keys(SUPPORTED_CURRENCIES),
+  default: DEFAULT_CURRENCY,
+  required: true
+}
