@@ -5,7 +5,7 @@ services:
     region: oregon
     plan: free
     buildCommand: cd backend && npm install
-    startCommand: cd backend && npm run setup && npm run start
+    startCommand: cd backend && npm run start
     autoDeploy: true
     envVars:
       - key: DATABASE
@@ -17,8 +17,10 @@ services:
       - key: NODE_ENV
         value: production
       - key: PUBLIC_SERVER_FILE
-        value: https://noble-farm-erp-backend.onrender.com
+        value: https://erp.noblefarms.uk
       - key: PORT
         value: '10000'
       - key: OPENSSL_CONF
         value: /dev/null
+      - key: SKIP_SETUP
+        value: 'true'
