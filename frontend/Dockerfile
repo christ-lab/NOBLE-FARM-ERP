@@ -1,16 +1,25 @@
-FROM node:20.9.0-alpine
+# Build stage
+FROM node:20-alpine AS builder
 
-WORKDIR /usr/src/app
+WORKDIR /app
 
-RUN npm install -g npm@10.2.4
-
-COPY package*.json ./
-COPY vite.config.js ./
-
-COPY . .
+COPY frontend/package*.json ./
 
 RUN npm install
 
+COPY frontend/ ./
+
+RUN npm run build
+
+# Production stage
+FROM node:20-alpine
+
+WORKDIR /app
+
+RUN npm install -g http-server
+
+COPY --from=builder /app/dist ./dist
+
 EXPOSE 3000
 
-CMD ["npm", "run", "dev", "--", "--host", "0.0.0.0"]
+CMD ["http-server", "dist", "-p", "3000", "--cors"]

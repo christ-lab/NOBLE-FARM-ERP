@@ -1,6 +1,7 @@
 {
-  "name": "idurar-erp-crm",
+  "name": "noble-farms-erp",
   "version": "4.1.0",
+  "description": "NOBLE FARMS ERP/CRM System",
   "engines": {
     "npm": "10.2.4",
     "node": "20.9.0"
@@ -8,7 +9,7 @@
   "scripts": {
     "start": "node src/server.js",
     "dev": "nodemon src/server.js --ignore public/",
-    "production": "NODE_ENV=production",
+    "production": "NODE_ENV=production node src/server.js",
     "setup": "node src/setup/setup.js",
     "upgrade": "node src/setup/upgrade.js",
     "reset": "node src/setup/reset.js"
@@ -47,16 +48,16 @@
   "_moduleAliases": {
     "@": "src"
   },
-  "main": "server.js",
-  "author": "IDURAR",
-  "email": "hello@idurarapp.com",
-  "license": "Fair-code License",
+  "main": "src/server.js",
+  "author": "NOBLE FARMS",
+  "email": "support@noblefarms.uk",
+  "license": "AGPL-3.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/idurar/idurar-erp-crm/.git"
+    "url": "git+https://github.com/christ-lab/NOBLE-FARM-ERP.git"
   },
   "bugs": {
-    "url": "https://github.com/idurar/idurar-erp-crm//issues"
+    "url": "https://github.com/christ-lab/NOBLE-FARM-ERP/issues"
   },
-  "homepage": "https://github.com/idurar/idurar-erp-crm/#readme"
+  "homepage": "https://github.com/christ-lab/NOBLE-FARM-ERP#readme"
 }

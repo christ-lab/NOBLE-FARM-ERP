@@ -1,6 +1,7 @@
 {
-  "name": "idurar-erp-crm",
+  "name": "noble-farms-erp",
   "version": "4.1.0",
+  "description": "NOBLE FARMS ERP/CRM Frontend",
   "engines": {
     "npm": "10.2.4",
     "node": "20.9.0"
@@ -42,5 +43,13 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.4",
     "prettier": "3.1.0"
-  }
+  },
+  "author": "NOBLE FARMS",
+  "email": "support@noblefarms.uk",
+  "license": "AGPL-3.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/christ-lab/NOBLE-FARM-ERP.git"
+  },
+  "homepage": "https://github.com/christ-lab/NOBLE-FARM-ERP#readme"
 }
