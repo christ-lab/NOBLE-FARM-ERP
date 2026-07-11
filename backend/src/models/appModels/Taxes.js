@@ -29,3 +29,9 @@ const schema = new mongoose.Schema({
 });
 
 module.exports = mongoose.model('Taxes', schema);
+currency: {
+  type: String,
+  enum: Object.keys(SUPPORTED_CURRENCIES),
+  default: DEFAULT_CURRENCY,
+  required: true
+}
