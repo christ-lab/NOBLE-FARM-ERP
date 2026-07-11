@@ -5,7 +5,12 @@ const invoiceSchema = new mongoose.Schema({
     type: Boolean,
     default: false,
   },
-
+currency: {
+  type: String,
+  enum: Object.keys(SUPPORTED_CURRENCIES),
+  default: DEFAULT_CURRENCY,
+  required: true
+}
   createdBy: { type: mongoose.Schema.ObjectId, ref: 'Admin', required: true },
   number: {
     type: Number,
