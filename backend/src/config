@@ -1,0 +1,20 @@
+export const SUPPORTED_CURRENCIES = {
+  USD: { name: 'US Dollar', symbol: '$', code: 'USD' },
+  EUR: { name: 'Euro', symbol: '€', code: 'EUR' },
+  GBP: { name: 'British Pound', symbol: '£', code: 'GBP' },
+  TZS: { name: 'Tanzanian Shilling', symbol: 'TSh', code: 'TZS' },
+  KES: { name: 'Kenyan Shilling', symbol: 'KSh', code: 'KES' },
+  UGX: { name: 'Ugandan Shilling', symbol: 'USh', code: 'UGX' },
+  ZAR: { name: 'South African Rand', symbol: 'R', code: 'ZAR' },
+  NGN: { name: 'Nigerian Naira', symbol: '₦', code: 'NGN' },
+  INR: { name: 'Indian Rupee', symbol: '₹', code: 'INR' },
+  JPY: { name: 'Japanese Yen', symbol: '¥', code: 'JPY' },
+  AUD: { name: 'Australian Dollar', symbol: 'A$', code: 'AUD' },
+  CAD: { name: 'Canadian Dollar', symbol: 'C$', code: 'CAD' },
+  CHF: { name: 'Swiss Franc', symbol: 'Fr', code: 'CHF' },
+  CNY: { name: 'Chinese Yuan', symbol: '¥', code: 'CNY' },
+  SEK: { name: 'Swedish Krona', symbol: 'kr', code: 'SEK' },
+  NZD: { name: 'New Zealand Dollar', symbol: 'NZ$', code: 'NZD' },
+};
+
+export const DEFAULT_CURRENCY = 'USD';
